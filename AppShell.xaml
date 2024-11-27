@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellTestMAUI9.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellTestMAUI9"
+    Title="ShellTestMAUI9">
+
+    <TabBar >
+        <ShellContent Icon="user" Title="Working 1" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 2" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 3" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 4" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Not working 1" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Not working 2" ContentTemplate="{DataTemplate local:MainPage6}" />
+    </TabBar>
+</Shell>
