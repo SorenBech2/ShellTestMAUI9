@@ -5,6 +5,7 @@
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
         }
 
         private async void GoToSecondPage_Clicked(object sender, EventArgs e)
