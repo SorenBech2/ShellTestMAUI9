@@ -18,9 +18,11 @@ namespace ShellTestMAUI9
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-            builder.Services.AddSingleton<MainPage6>();
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<MainPage6>();
             builder.Services.AddTransient<SecondPage>();
-            builder.Services.AddSingleton<SecondPage6>();
+            builder.Services.AddTransient<SecondPage6>();
+            builder.Services.AddTransient<MainViewModel>();
             return builder.Build();
         }
     }

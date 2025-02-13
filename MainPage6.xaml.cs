@@ -2,9 +2,13 @@
 {
     public partial class MainPage6 : ContentPage
     {
-        public MainPage6()
+        private readonly MainViewModel _viewModel;
+
+        public MainPage6(MainViewModel viewModel)
         {
             InitializeComponent();
+            BindingContext = viewModel;
+            _viewModel = viewModel;
         }
 
         private async void GoToSecondPage_Clicked(object sender, EventArgs e)

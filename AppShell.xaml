@@ -8,7 +8,12 @@
     Title="ShellTestMAUI9">
 
     <TabBar >
-        <ShellContent Icon="user" Title="Page" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 1" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 2" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 3" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Working 4" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Not working 1" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Icon="user" Title="Not working 2 (select this page)" ContentTemplate="{DataTemplate local:MainPage6}" />
 
     </TabBar>
 </Shell>

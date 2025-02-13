@@ -4,126 +4,15 @@
              x:Class="ShellTestMAUI9.SecondPage6"
              Title="SecondPage6">
 
-    <Grid >
-        <ScrollView VerticalScrollBarVisibility="Never" >
-            <VerticalStackLayout MinimumHeightRequest="850" >
-                <!-- Vessel Picture section -->
-                <Grid HorizontalOptions="CenterAndExpand" RowDefinitions="180" ColumnDefinitions="355">
-                    <Image Source="{Binding VesselImageSource}" HeightRequest="180" Aspect="AspectFit" />
-                    <ImageButton x:Name="CameraButton" Source="{AppThemeBinding Light=add_a_photo_light, Dark=add_a_photo_dark}"
-                    VerticalOptions="Center" />
-                </Grid>
-                <Border MinimumHeightRequest="50" WidthRequest="355" Padding="15,5,15,5" Margin="0,10,0,0" >
-                    <Grid ColumnDefinitions="10, 147, 10, 10, 147">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="15"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="15"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="15"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="15"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="15"/>
-                            <RowDefinition Height="20"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="5"/>
-                        </Grid.RowDefinitions>
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 
-                        <Label Grid.Row="0" Grid.ColumnSpan="2"
-                        Text="NameOfVessel" FontSize="15" />
-                        <Image Grid.Row="1" Grid.Column="0"
-                        Source="{AppThemeBinding Light=sailboat_icon_light, Dark=sailboat_icon_dark}" Aspect="AspectFit" Opacity="0.5" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-               
-                        <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Style="{StaticResource BoxAsAline}" />
-
-                        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
-                        Text="VesselModel" FontSize="15" />
-                        <Label Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"
-                        Text="RegNoShort" FontSize="15" />
-                        <Image Grid.Row="4" Grid.Column="0"
-                        Source="{AppThemeBinding Light=sailboat_icon_light, Dark=sailboat_icon_dark}" Aspect="AspectFit" Opacity="0.5" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-
-                        <Image Grid.Row="4" Grid.Column="3"
-                        Source="{AppThemeBinding Light=registration_icon_light, Dark=registration_icon_dark}" Aspect="AspectFit" Opacity="0.5" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center" Margin="0,0,0,-2"/>
-     
-                        <BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-                        <BoxView Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-
-                        <HorizontalStackLayout Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
-                            <Label Text="VesselType" FontSize="15" />
-                            <ActivityIndicator IsVisible="{Binding VesselTypeIsLoading}" IsRunning="{Binding VesselTypeIsLoading}" Scale="{OnPlatform iOS=1}" 
-                            HeightRequest="15" WidthRequest="15" Margin="5,0,0,0" />
-                        </HorizontalStackLayout>
-                        <Label Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2"
-                        Text="LengthInMeters" FontSize="15" />
-
-                        <Image Grid.Row="7" Grid.Column="0"
-                        Source="{AppThemeBinding Light=sailboat_icon_light, Dark=sailboat_icon_dark}" Aspect="AspectFit" Opacity="0.5" WidthRequest="15"
-                           HorizontalOptions="Start" VerticalOptions="Center"/>
-              
-                        <Image Grid.Row="7" Grid.Column="3"
-                        Source="{AppThemeBinding Light=length_icon_light, Dark=length_icon_dark}" Aspect="AspectFit" Opacity="0.3" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-             
-                        <BoxView Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-                        <BoxView Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-
-                        <Label Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2"
-                        Text="BeamInMeters" FontSize="15" />
-                        <Label Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="2"
-                        Text="DraftInMeters" FontSize="15" />
-                        <Image Grid.Row="10" Grid.Column="0"
-                        Source="{AppThemeBinding Light=beam_icon_light, Dark=beam_icon_dark}" Aspect="AspectFit" Opacity="0.3" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center"/>
-                 
-                        <Image Grid.Row="10" Grid.Column="3"
-                        Source="{AppThemeBinding Light=draft_icon_light, Dark=draft_icon_dark}" Aspect="AspectFit" Opacity="0.3" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center"/>
-          
-                        <BoxView Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-                        <BoxView Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource BoxAsAline}" />
-
-                        <Label Grid.Row="12" Grid.ColumnSpan="2"
-                        Text="HomeMarina" FontSize="15" />
-                        <Image Grid.Row="13" Grid.Column="0"
-                        Source="{AppThemeBinding Light=marina_icon_light, Dark=marina_icon_dark}" Aspect="AspectFit" Opacity="0.6" WidthRequest="15" HorizontalOptions="Start" VerticalOptions="Center" />
-                   
-                        <BoxView Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="5" Style="{StaticResource BoxAsAline}" />
-
-                        <HorizontalStackLayout Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2">
-                            <Label Text="CountryMandatory" FontSize="15" />
-                            <ActivityIndicator IsVisible="{Binding CountryIsLoading}" IsRunning="{Binding CountryIsLoading}" HeightRequest="15" 
-                            WidthRequest="15" Scale="{OnPlatform iOS=1}" Margin="5,0,0,0"/>
-                        </HorizontalStackLayout>
-                        <Image Grid.Row="16" Grid.Column="0"
-                        Source="{AppThemeBinding Light=map_marker_outline_light, Dark=map_marker_outline_dark}" Aspect="AspectFit" Opacity="0.3" WidthRequest="15" 
-                        HorizontalOptions="Start" VerticalOptions="Center" />
-              
-                        <BoxView Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="5" Style="{StaticResource BoxAsAline}" />
-                    </Grid>
-                </Border>
-                <Label Text="RequiredField" FontSize="12" Margin="0,0,30,-8" HorizontalOptions="End"/>
-
-                <HorizontalStackLayout Margin="15,0,0,10" >
-                    <CheckBox x:Name="MemberOfFrihavnsordning" HeightRequest="25" Margin="5,0,0,0"/>
-                    <Label Text="MemberOfFrihavnsordning"  FontSize="14" VerticalTextAlignment="Center" />
-                </HorizontalStackLayout>
-
-                <Button x:Name="SaveVesselInfoButton"
-                Text="Save" Style="{StaticResource Change}" HeightRequest="44" HorizontalOptions="Center" 
-                WidthRequest="315" Command="{Binding SaveVesselCommand}" IsVisible="{Binding IsAddingVessel}"/>
-
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" IsVisible="{Binding IsEditingVessel}" >
-                    <Button x:Name="ChangeVesselInfoButton" Text="SaveChanges" HeightRequest="44"  />
-                    <Button x:Name="DeleteVesselButton" Text="DeleteVessel" HeightRequest="44" />
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
-        </ScrollView>
-
-    
-    </Grid>
+        <Button
+            Text="Go Back"
+            WidthRequest="150"
+            Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
 </ContentPage>
