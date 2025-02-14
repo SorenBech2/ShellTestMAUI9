@@ -71,8 +71,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="MainPage6.xaml.cs">
-	    <DependentUpon>MainPage6.xaml</DependentUpon>
+	  <Compile Update="EmptyPage.xaml.cs">
+	    <DependentUpon>EmptyPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Page1.xaml.cs">
+	    <DependentUpon>Page1.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Page3.xaml.cs">
+	    <DependentUpon>Page3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Page6.xaml.cs">
+	    <DependentUpon>Page6.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SecondPage3.xaml.cs">
+	    <DependentUpon>SecondPage3.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SecondPage5.xaml.cs">
+	    <DependentUpon>SecondPage5.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="SecondPage6.xaml.cs">
 	    <DependentUpon>SecondPage6.xaml</DependentUpon>
@@ -80,13 +95,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MainPage6.xaml">
+	  <MauiXaml Update="EmptyPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page6.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SecondPage5.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SecondPage6.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SecondPage.xaml">
+	  <MauiXaml Update="SecondPage3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

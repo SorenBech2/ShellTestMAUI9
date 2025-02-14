@@ -399,7 +399,7 @@
         </Setter>
     </Style>
   
-    <!--
+    
     <Style TargetType="TitleBar">
         <Setter Property="MinimumHeightRequest" Value="32"/>
         <Setter Property="VisualStateManager.VisualStateGroups">
@@ -421,7 +421,7 @@
             </VisualStateGroupList>
         </Setter>
     </Style>
-    -->
+    
 
     <Style TargetType="Page" ApplyToDerivedTypes="True">
         <Setter Property="Padding" Value="0"/>

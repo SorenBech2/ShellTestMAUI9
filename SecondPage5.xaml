@@ -2,9 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:ShellTestMAUI9"
-             x:Class="ShellTestMAUI9.SecondPage6"
-             Title="OnNavigatedTo Test">
+             x:Class="ShellTestMAUI9.SecondPage5"
+             Title="Back Button Override Test">
     
+    <Shell.BackButtonBehavior >
+        <BackButtonBehavior Command="{Binding GoBackCommand}" />
+    </Shell.BackButtonBehavior>
+
     <VerticalStackLayout>
         <VerticalStackLayout>
             <Button

@@ -8,12 +8,11 @@
     Title="ShellTestMAUI9">
 
     <TabBar >
-        <ShellContent Icon="user" Title="Working 1" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Icon="user" Title="Working 2" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Icon="user" Title="Working 3" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Icon="user" Title="Working 4" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Icon="user" Title="Not working 1" ContentTemplate="{DataTemplate local:MainPage}" />
-        <ShellContent Icon="user" Title="Not working 2 (select this page)" ContentTemplate="{DataTemplate local:MainPage6}" />
-
+        <ShellContent Icon="user" Title="BackButtonTest" ContentTemplate="{DataTemplate local:Page1}" />
+        <ShellContent Icon="user" Title="Empty page" ContentTemplate="{DataTemplate local:EmptyPage}" />
+        <ShellContent Icon="user" Title="OnNavigatingTo" ContentTemplate="{DataTemplate local:Page3}" />
+        <ShellContent Icon="user" Title="Empty page" ContentTemplate="{DataTemplate local:EmptyPage}" />
+        <ShellContent Icon="user" Title="Select for BackButton Override Test" ContentTemplate="{DataTemplate local:Page1}" />
+        <ShellContent Icon="user" Title="Select for OnNavigatingTo Test" ContentTemplate="{DataTemplate local:Page6}" />
     </TabBar>
 </Shell>
