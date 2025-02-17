@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ShellTestMAUI9">
 
-    <TabBar >
+    <TabBar Shell.TabBarForegroundColor="Green" Shell.TabBarUnselectedColor="Red">
         <ShellContent Icon="user" Title="BackButtonTest" ContentTemplate="{DataTemplate local:Page1}" />
         <ShellContent Icon="user" Title="Empty page" ContentTemplate="{DataTemplate local:EmptyPage}" />
         <ShellContent Icon="user" Title="OnNavigatingTo" ContentTemplate="{DataTemplate local:Page3}" />
