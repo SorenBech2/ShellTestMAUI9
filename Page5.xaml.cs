@@ -16,5 +16,4 @@
             await Shell.Current.GoToAsync($"{nameof(SecondPage5)}", true);
         }
     }
-
 }
